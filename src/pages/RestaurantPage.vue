@@ -2,7 +2,10 @@
   <div class="restaurantpage--section">
       <div class="restaurant--infos--section">
         <RouterLink to="/">
+        <div class="flex--backhome">
+          <img src="/arrowback.png" class="arrowback--restaurantpage"/>
           <div id="return">Retour à la home</div>
+          </div>
         </RouterLink>
         <img class="dyn--restaurant--img" :src="restaurant.image" alt=""/>
         <p>{{ restaurant.name }}</p>
@@ -13,7 +16,13 @@
         <div v-for="category in restaurant.menu" :key="category.category" >
           <h2>{{ category.category }}</h2>
           <div class="dyn--menu--infos">
-            <div v-for="item in category.items" :key="item.name">{{ item.name }} - {{ item.price }}</div>
+            <div class="dyn--flexmenu" v-for="item in category.items" :key="item.name">
+              <img class="img--item" :src="item.image"/>
+                <div class="infos--item">
+                  <span>{{ item.name }}</span>
+                  <p>{{ item.price }}<b> $</b></p>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -80,18 +89,80 @@ export default {
     
     .dyn--menu--infos{
         display: flex;
-        gap:15px;
+        gap:30px;
         flex-wrap: wrap;
+        border-radius: 50%;
 
-        div{
-          background-color: white;
-          padding:20px;
+        .dyn--flexmenu{
+          width: 250px;
+            display: flex;
+            align-items: center;
+                      background-color: white;
+                      height: 100px;
+                      border-radius: 10px;
+
         }
+
+        .img--item{
+          width: 40%;
+          height: 100% ;
+          object-fit: cover;
+          border-radius: 10px 0px 0px 10px;
+          background-color:#3e3e3e;
+
+        }
+
+         .infos--item{
+          padding:20px;
+           
+           span{
+            font-weight:500;
+            margin:0px;
+                        font-size:16px;
+              padding:0px;
+           }
+
+           p{
+            font-size:14px;
+            line-height: 1.6;
+            font-weight:500;
+              margin:10px 0px 0px 0px;
+              padding:0px;
+              font-style: italic;
+              color:grey;
+
+          
+           }
+
+           b{
+              font-weight:500;
+              font-size:14px;
+              font-style:italic;
+              margin-bottom:0px;
+              margin:0px;
+              padding:0px;
+              color:black
+            }
+        }
+
+       
     }
   }
 
    .restaurant--infos--section{
     width: 50%;
     padding-right: 50px;
+  }
+
+  .arrowback--restaurantpage{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  .flex--backhome{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 </style>
