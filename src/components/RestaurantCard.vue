@@ -36,45 +36,56 @@ setup(props) {
 </script>
 
 <style lang="scss">
-.restaurant--card{
-    width:32%;
+.restaurant--card {
+    width: auto;
     height: 30vh;
 
-    p{
+    p {
         margin: 0px;
     }
 
-    .restaurant--image{
-        background-image: url("https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zNzg4MDJiMC1jNTI4LTQ4MjktYjBiNS0wY2M2NDBkZjYzY2QuanBlZw==") ;
+    .restaurant--image {
+        background-image: url("https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zNzg4MDJiMC1jNTI4LTQ4MjktYjBiNS0wY2M2NDBkZjYzY2QuanBlZw==");
         background-position: center;
         height: 70%;
-        background-size:cover;
-
-
+        background-size: cover;
+        transition: background-size 0.2s ease-in-out;
     }
 
-    .restaurant--informations{
+    &:hover {
+        p:first-child {
+            text-decoration: underline;
+        }
 
-         .top{
-            margin: 10px 0px;
+        .restaurant--image {
+            background-size: 120%;
+
+        }
+    }
+
+    .restaurant--informations {
+        .top {
+            margin: 20px 0px 0px 0px;
             display: flex;
             justify-content: space-between;
             align-content: center;
-            .note{
-            background-color: #eee;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 30px;
-            width:30px;
-            font-size: 0.8rem;
-            border-radius: 50%;
+
+            .note {
+                background-color: #eee;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                width: 30px;
+                font-size: 0.8rem;
+                border-radius: 50%;
             }
         }
 
-        .time{
+        .time {
             font-size: 0.9rem;
         }
     }
 }
+
 </style>

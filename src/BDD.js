@@ -1,11 +1,54 @@
 
     const info = [
         {
-          name: 'Subway',
-          image: 'https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zNzg4MDJiMC1jNTI4LTQ4MjktYjBiNS0wY2M2NDBkZjYzY2QuanBlZw==',
-          note: '4.5',
-          drive_time: '20 - 30mn'
+            name: 'Subway',
+            image: 'https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zNzg4MDJiMC1jNTI4LTQ4MjktYjBiNS0wY2M2NDBkZjYzY2QuanBlZw==',
+            note: '4.5',
+            drive_time: '20 - 30mn',
+            menu: [
+                {
+                    category: 'Menu',
+                    items: [
+                        { name: 'Best-Of', price: 5.99, description: 'Includes a sandwich, fries, and a drink' },
+                        { name: 'Maxi Best-Of', price: 6.99, description: 'Includes a larger sandwich, fries, and a drink' },
+                        { name: 'Golden', price: 7.99, description: 'Includes a premium sandwich, fries, and a drink' }
+                    ]
+                },
+                {
+                    category: 'Burger',
+                    items: [
+                        { name: 'Big Mac', price: 3.99, description: 'Classic burger with special sauce' },
+                        { name: '380', price: 4.49, description: 'Double beef patty with cheese' },
+                        { name: 'Triple Cheeseburger', price: 5.49, description: 'Triple beef patty with cheese' },
+                        { name: 'Double Cheeseburger', price: 4.99, description: 'Double beef patty with cheese' },
+                        { name: 'Cheeseburger', price: 3.49, description: 'Classic burger with cheese' },
+                        { name: 'Royal Cheese', price: 5.99, description: 'Burger with premium ingredients' }
+                    ]
+                },
+                {
+                    category: 'Petite faim',
+                    items: [
+                        { name: '4 nuggets', price: 2.99, description: '4 pieces of chicken nuggets' },
+                        { name: 'Frites', price: 1.99, description: 'French fries' },
+                        { name: 'Potatoes', price: 2.49, description: 'Baked potatoes' }
+                    ]
+                },
+                {
+                    category: 'Boisson',
+                    items: [
+                        { name: 'Coca-Cola', price: 1.49, description: 'Classic Coca-Cola' },
+                        { name: 'Pepsi', price: 1.49, description: 'Pepsi soda' },
+                        { name: 'Fanta', price: 1.49, description: 'Fanta orange soda' },
+                        { name: 'Sprite', price: 1.49, description: 'Sprite lemon-lime soda' },
+                        { name: 'Orangina', price: 1.99, description: 'Orangina orange-flavored beverage' },
+                        { name: 'Eau', price: 0.99, description: 'Bottled water' },
+                        { name: 'Jus de pomme', price: 1.99, description: 'Apple juice' }
+                    ]
+                }
+            ]
         },
+
+        
         {
           name: 'McDonald\'s' ,
           image: 'https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC9iODQ1NDA4Zi1lOGFmLTRkMDUtYWI4YS0yNWMwYzVjMGI4YWUuanBlZw==',

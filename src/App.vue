@@ -1,17 +1,12 @@
 <template>
   <div id="app">
-    <HomePage />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HomePage from './pages/HomePage.vue'; // Assurez-vous que le chemin est correct
-
 export default {
   name: 'App',
-  components: {
-    HomePage,
-  },
 };
 </script>
 

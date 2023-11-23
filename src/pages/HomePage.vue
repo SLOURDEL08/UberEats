@@ -5,12 +5,14 @@
       <div class="wrapper--input">
         <input v-model="user_search_restaurant" type="text" placeholder="De quoi avez vous envie ?">
         <div class="search">
-          <div v-for="(restaurant, i) in search_restaurant" :key="i"   class="container--restaurant--search">
+          <router-link v-for="(restaurant, i) in search_restaurant" :key="i" :to="{name: 'Restaurant', params: { name: restaurant.name } }">
+            <div class="container--restaurant--search">
             <div class="wrapper--img">
               <img :src="restaurant.image"/>
             </div>
             <p>{{ restaurant.name }}</p>
           </div>
+          </router-link>
         </div>
       </div>
     </div>
