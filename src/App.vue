@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
     <router-view></router-view>
-  </div>
 </template>
 
 <script>
@@ -11,7 +9,7 @@ export default {
 </script>
 
 <style>
-@import url('./style/reset.css');
+@import url('./style.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto%3Awght%40300%3B400%3B700&display=swap');
 
 #app {
