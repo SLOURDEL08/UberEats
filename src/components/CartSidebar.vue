@@ -84,11 +84,7 @@
       </div>
     </div>
 
-    <div 
-      v-if="isOpen"
-      class="fixed inset-0 bg-black bg-opacity-50 transition-opacity lg:hidden"
-      @click="$emit('close')"
-    ></div>
+   
   </div>
 </template>
 
