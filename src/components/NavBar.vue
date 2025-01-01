@@ -1,11 +1,12 @@
 <template>
   <header class="flex fixed gap-6 w-full z-50 justify-between items-center p-6 bg-white shadow-md">
-    <!-- Logo -->
+    <a href="/">
     <img 
       src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/ee037401cb5d31b23cf780808ee4ec1f.svg" 
       alt="Logo" 
       class="w-48"
     />
+    </a>
 
     <div class="flex w-full gap-6 justify-end">
       <div class="relative w-full max-w-lg ">

@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="restaurant-card group bg-white rounded-3xl overflow-hidden cursor-pointer transform transition-all duration-300 border hover:shadow-2xl hover:-translate-y-1"
+    class="restaurant-card group bg-white overflow-hidden cursor-pointer transform transition-all duration-300 border hover:shadow-2xl hover:-translate-y-1"
   >
     <!-- Image Container -->
     <div class="relative h-60 overflow-hidden">

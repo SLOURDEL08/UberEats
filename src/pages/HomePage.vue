@@ -1,6 +1,5 @@
 <template>
   <div class="home-page min-h-screen bg-gray-50">
-    <NavBar/>
     <BannerSlider />
 
     <section class="px-6 py-8">
@@ -54,7 +53,6 @@ import BDD from '../BDD'
 import { ref, computed } from 'vue'
 import RestaurantCard from '../components/RestaurantCard.vue'
 import BannerSlider from '../components/BannerSlider.vue'
-import NavBar from '../components/NavBar.vue'
 import Filters from '../components/Filters.vue'
 import { RouterLink } from 'vue-router'
 import { watch } from 'vue'
@@ -64,7 +62,6 @@ export default {
   components: { 
     RestaurantCard, 
     BannerSlider, 
-    NavBar,
     Filters,
     RouterLink
   },

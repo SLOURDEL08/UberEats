@@ -3,7 +3,7 @@ import App from './App.vue'
 import './style.css' 
 
 
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from './pages/HomePage.vue'
 import RestaurantPage from './pages/RestaurantPage.vue'
 
@@ -14,7 +14,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history:  createWebHashHistory(),
+    history: createWebHistory(),  // Au lieu de createWebHashHistory
     routes
 });
 

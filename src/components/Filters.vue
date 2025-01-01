@@ -29,17 +29,14 @@
     <!-- Bouton principal -->
     <button 
       @click="toggleFilters"
-      class="px-4 py-2 bg-white hover:border-black  group border border-gray-200 hover:bg-black hover:text-green-400 rounded-full text-lg font-[500] whitespace-nowrap transition-all duration-300 flex items-center gap-2"
-      :class="{'!bg-black  border-black text-green-400': isExpanded || selectedCategory}"
+      class="px-5 py-2 bg-white flex items-center  hover:border-black  group border border-gray-200 hover:bg-black hover:text-green-400 rounded-full text-base font-[500] whitespace-nowrap transition-all duration-300 gap-1"
+      :class="{'!bg-black   border-black text-green-400': isExpanded || selectedCategory}"
     >
-      <span class="material-icons h-6 w-6 transition-all duration-300 group-hover:text-green-400 text-gray-600" 
-            :class="{'text-green-400': isExpanded || selectedCategory}">
-        filter_list
-      </span>
+
       {{ 'Filtres' }}
       <span 
-        class="material-icons h-6 w-6  transition-all duration-300  group-hover:text-green-400  "
-        :class="{'rotate-180': isExpanded, 'text-green-400 ': isExpanded || selectedCategory}"
+        class="material-icons h-6 w-6 -mr-2  transition-all duration-300  group-hover:text-green-400  "
+        :class="{'rotate-180 ': isExpanded, 'text-green-400 ': isExpanded || selectedCategory}"
       >
         expand_more
       </span>
