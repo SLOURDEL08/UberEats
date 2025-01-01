@@ -2,9 +2,9 @@
   "name": "ubereats",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && cp public/_redirects dist/",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
